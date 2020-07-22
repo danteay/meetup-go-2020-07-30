@@ -1,0 +1,9 @@
+{
+  "name": "example2",
+  "description": "Golang Serverless Project",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-sam": "^0.2.0"
+  }
+}
