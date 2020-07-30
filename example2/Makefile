@@ -1,4 +1,4 @@
-.PHONY: build clean test lint build_sam_template
+.PHONY: build clean test lint build_sam_template deploy
 
 install:
 	@npm i # install all serverless plugin dependencies
@@ -21,3 +21,6 @@ build_sam_template:
 
 run: build build_sam_template
 	@sam local start-api
+
+deploy: build
+	@sls deploy --verbose
