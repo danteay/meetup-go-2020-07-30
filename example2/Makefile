@@ -1,7 +1,6 @@
 .PHONY: build clean test lint build_sam_template
 
 install:
-	@go mod download
 	@npm i # install all serverless plugin dependencies
 
 build: clean
